@@ -4,16 +4,16 @@
 
 // Return true if there is a cycle in the linked list. Otherwise, return false.
 //  Definition for singly-linked list.
-class ListNode {
+class myListNode {
   val: number;
-  next: ListNode | null;
-  constructor(val?: number, next?: ListNode | null) {
+  next: myListNode | null;
+  constructor(val?: number, next?: myListNode | null) {
     this.val = val === undefined ? 0 : val;
     this.next = next === undefined ? null : next;
   }
 }
 
-function hasCycle(head: ListNode | null): boolean {
+function hasCycle(head: myListNode | null): boolean {
   if (!head) return false;
   let current = head;
   let count = 0;
